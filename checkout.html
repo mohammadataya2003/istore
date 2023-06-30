@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Checkout</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="viewcart.html">Cart</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="container my-5">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Checkout</h2>
+				<table class="table table-striped">
+				
+					<tfoot>
+						<tr>
+							<td colspan="3">Subtotal:</td>
+							<td id="subtotal">$0.00</td>
+						</tr>
+						
+					</tfoot>
+				</table>
+			</div>
+			<div class="col-md-5">
+				<h2>Shipping Information</h2>
+				<form>
+					<div class="form-group my-2">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" required>
+					</div>
+					<div class="form-group my-2">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="form-group my-2">
+						<label for="address">Address</label>
+						<input type="text" class="form-control" id="address" required>
+					</div>
+					<div class="form-group my-2">
+						<label for="city">City</label>
+						<input type="text" class="form-control" id="city" required>
+					</div>
+					<button type="submit" class="btn btn-primary btn-block">Complete Purchase</button>
+				</form>
+			</div>
+		</div>
+		
+	</main>
+	<footer class="bg-light text-center py-3">
+			&copy; 2023 - iStore Online Store. All Rights Reserved.
+		</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
